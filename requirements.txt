@@ -1,12 +1,13 @@
-pandas>=2.0
-numpy>=1.24
-pyarrow>=14.0
-scikit-learn>=1.4
-imbalanced-learn>=0.12
-xgboost>=2.0
-matplotlib>=3.7
-seaborn>=0.13
-plotly>=5.18
-streamlit>=1.40
-joblib>=1.3
-jupyter>=1.0
+# Versiones exactas con las que se entrenaron y guardaron los modelos (.joblib)
+scikit-learn==1.9.1
+imbalanced-learn==0.14.2
+xgboost==3.4.1
+pandas==3.0.1
+numpy==2.5.3
+pyarrow==26.0.1
+joblib==1.6.0
+streamlit==1.67.0
+plotly==6.7.0
+matplotlib
+seaborn
+# Para ejecutar el notebook localmente: pip install jupyter
