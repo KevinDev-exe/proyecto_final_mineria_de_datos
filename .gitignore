@@ -1,0 +1,4 @@
+# El dataset pesa ~150 MB (supera el limite de GitHub). Descargarlo de Kaggle a 01_Datos/
+01_Datos/creditcard.csv
+__pycache__/
+.ipynb_checkpoints/
