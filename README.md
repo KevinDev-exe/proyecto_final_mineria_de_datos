@@ -14,7 +14,8 @@ Sistema de *machine learning* y aprendizaje profundo que detecta fraude en tarje
 ```
 trabajo final mineria de datos/
 ├── 01_Datos/
-│   └── creditcard.csv                         ← dataset de Kaggle (284.807 transacciones, 150 MB)
+│   ├── creditcard.zip                         ← dataset de Kaggle comprimido (68,5 MB, va en GitHub)
+│   └── creditcard.csv                         ← el mismo descomprimido (150 MB, solo local)
 ├── 02_Notebook_Analisis/
 │   └── Deteccion_Fraude_Tarjetas_Credito.ipynb ← TODO el análisis, con las preguntas respondidas
 ├── 03_Modelos_Entrenados/
@@ -66,7 +67,7 @@ El umbral se eligió con validación cruzada *out-of-fold* (máximo F1 con Recal
    ```bash
    pip install -r requirements.txt
    ```
-2. (Solo si no está) descargar `creditcard.csv` de [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) y guardarlo en `01_Datos/`.
+2. El dataset ya viene en `01_Datos/creditcard.zip`; el notebook lo lee directamente, sin descomprimirlo.
 3. (Opcional, los modelos ya están entrenados) volver a ejecutar el notebook: `02_Notebook_Analisis/Deteccion_Fraude_Tarjetas_Credito.ipynb` (≈ 15 min).
 4. Abrir la aplicación web desde esta carpeta:
    ```bash
@@ -74,4 +75,4 @@ El umbral se eligió con validación cruzada *out-of-fold* (máximo F1 con Recal
    ```
    Se abre en `http://localhost:8501`.
 
-> Nota para GitHub: `creditcard.csv` pesa 150 MB (GitHub admite máximo 100 MB por archivo), por eso está en `.gitignore`.
+> Nota para GitHub: `creditcard.csv` pesa 150 MB (GitHub admite máximo 100 MB por archivo), por eso en el repositorio solo se sube `creditcard.zip`.
